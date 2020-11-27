@@ -2,7 +2,7 @@ package com.example.centropokemon;
 
 public class Entrenador {
     private int foto;
-    private int id;
+    private String id;
     private String nombre;
     private String edad;
     private String ciudad;
@@ -15,11 +15,11 @@ public class Entrenador {
         this.foto = foto;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -47,11 +47,16 @@ public class Entrenador {
         this.ciudad = ciudad;
     }
 
-    public Entrenador(int foto, int id, String nombre, String edad, String ciudad) {
+    public Entrenador(int foto, String id, String nombre, String edad, String ciudad) {
         this.foto = foto;
         this.id = id;
         this.nombre = nombre;
         this.edad = edad;
         this.ciudad = ciudad;
+    }
+    public  void  guardarEn(){ Datos.guardarEn(this);}
+
+    public void  eliminarEn(){
+        Datos.eliminarEn(this);
     }
 }

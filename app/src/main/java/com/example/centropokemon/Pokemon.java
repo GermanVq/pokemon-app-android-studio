@@ -2,13 +2,13 @@ package com.example.centropokemon;
 
 public class Pokemon {
     private int foto;
-    private int id;
+    private String id;
     private String nombre;
     private Entrenador entrenador;
     private String elemento;
     private String nivel;
 
-    public Pokemon(int foto, int id, String nombre, Entrenador entrenador, String elemento, String nivel) {
+    public Pokemon(int foto, String id, String nombre, Entrenador entrenador, String elemento, String nivel) {
         this.foto = foto;
         this.id = id;
         this.nombre = nombre;
@@ -25,11 +25,11 @@ public class Pokemon {
         this.foto = foto;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -63,5 +63,10 @@ public class Pokemon {
 
     public void setNivel(String nivel) {
         this.nivel = nivel;
+    }
+    public  void  guardarPo(){ Datos.guardarPo(this);}
+
+    public void  eliminarPo(){
+        Datos.eliminarPo(this);
     }
 }
