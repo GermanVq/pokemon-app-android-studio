@@ -4,11 +4,11 @@ public class Pokemon {
     private int foto;
     private String id;
     private String nombre;
-    private Entrenador entrenador;
+    private String entrenador;
     private String elemento;
     private String nivel;
 
-    public Pokemon(int foto, String id, String nombre, Entrenador entrenador, String elemento, String nivel) {
+    public Pokemon(int foto, String id, String nombre, String entrenador, String elemento, String nivel) {
         this.foto = foto;
         this.id = id;
         this.nombre = nombre;
@@ -41,11 +41,11 @@ public class Pokemon {
         this.nombre = nombre;
     }
 
-    public Entrenador getEntrenador() {
+    public String  getEntrenador() {
         return entrenador;
     }
 
-    public void setEntrenador(Entrenador entrenador) {
+    public void setEntrenador(String entrenador) {
         this.entrenador = entrenador;
     }
 
@@ -64,6 +64,12 @@ public class Pokemon {
     public void setNivel(String nivel) {
         this.nivel = nivel;
     }
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
+
     public  void  guardarPo(){ Datos.guardarPo(this);}
 
     public void  eliminarPo(){
