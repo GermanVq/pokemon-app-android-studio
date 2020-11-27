@@ -44,7 +44,7 @@ public class DetalleEntrenador extends AppCompatActivity {
         ed = bundle.getString("edad");
         edad.setText(ed);
         ciu = bundle.getString("ciudad");
-        id.setText(ciu);
+        ciudad.setText(ciu);
         sex = bundle.getString("sexo");
         sexo.setText(sex);
 
