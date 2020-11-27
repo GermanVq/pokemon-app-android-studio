@@ -4,6 +4,18 @@
     <string name="brock">Brock</string>
     <string name="pro_oak">Profesor Oak</string>
     <string name="misty">Misty</string>
+    <string name="detalle_pokemon">Detalle de Pokemon</string>
+    <string name="detalle_entrenador">Detalle de Entrenadoe</string>
+    <string name="mensaje_guardado">Guardado exitosamente!</string>
+    <string name="positivo">Positivo</string>
+    <string name="negativo">Negativo</string>
+    <string name="incierto">Incierto</string>
+    <string name="mensaje_error">Por favor complete el campo requerido</string>
+    <string name="eliminar_pokemon">Eliminar paciente</string>
+    <string name="eliminar_entrenador">Eliminar paciente</string>
+    <string name="seguro">¿Estás seguro de que quieres eliminar a este paciente?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
 
     <string-array name="spEntrenamor">
         <item>@string/ash</item>
