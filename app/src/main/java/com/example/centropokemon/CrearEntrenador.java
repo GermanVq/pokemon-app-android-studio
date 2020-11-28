@@ -42,12 +42,12 @@ public class CrearEntrenador extends AppCompatActivity {
     }
     public void guardar(View v) {
         if (rbHombre.isChecked() == true) {
-            resSex = "getString(R.string.positivo);";
+            resSex = getString(R.string.hombre);;
         }
-        if (rbHombre.isChecked() == true) {
-            resSex = "getString(R.string.negativo)";
+        if (rbMujer.isChecked() == true) {
+            resSex = getString(R.string.mujer);
         } else {
-            resSex = "getString(R.string.incierto)";
+            resSex = getString(R.string.incierto);
         }
         if(validar()){
             String ide, nomb, ciu, eda, sex;
@@ -62,7 +62,7 @@ public class CrearEntrenador extends AppCompatActivity {
             p.guardarPo();
             borrar(v);
 
-            Toast.makeText(this, "Entrenador guardado", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getText(R.string.guardado_entrenador), Toast.LENGTH_LONG).show();
         }
     }
     public Boolean validar(){
@@ -72,6 +72,22 @@ public class CrearEntrenador extends AppCompatActivity {
             nombre.requestFocus();
             return false;
         }
+        if (ciudad.getText().toString().isEmpty()){
+            ciudad.setError(getString(R.string.mensaje_error));
+            ciudad.requestFocus();
+            return false;
+        }
+        if (edad.getText().toString().isEmpty()){
+            edad.setError(getString(R.string.mensaje_error));
+            edad.requestFocus();
+            return false;
+        }
+        if (id.getText().toString().isEmpty()){
+            id.setError(getString(R.string.mensaje_error));
+            id.requestFocus();
+            return false;
+        }
+
 
         return true;
     }
@@ -88,7 +104,11 @@ public class CrearEntrenador extends AppCompatActivity {
     }
     public void borrar(View v){
         nombre.setText("");
+        id.setText("");
+        ciudad.setText("");
+        edad.setText("");
         nombre.requestFocus();
+
     }
 
     }

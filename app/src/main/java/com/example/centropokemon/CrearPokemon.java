@@ -67,7 +67,7 @@ public class CrearPokemon extends AppCompatActivity {
             sin = sin + e4.getText().toString()+", ";
         }
         if(e1.isChecked() == false && e2.isChecked() == false && e3.isChecked() == false && e4.isChecked() == false){
-            sin = "sin sintomas";
+            sin = "No Element";
         }
         return sin;
     }
@@ -112,7 +112,10 @@ public class CrearPokemon extends AppCompatActivity {
         startActivity(i);
     }
     public void borrar(View v){
+
         nombre.setText("");
-        nombre.requestFocus();
+        nivel.setText("");
+        id.setText("");
+        id.requestFocus();
     }
 }

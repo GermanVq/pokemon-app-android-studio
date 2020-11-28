@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetalleEntrenador"></activity>
+        <activity android:name=".EntrenadorActivity"></activity>
+        <activity android:name=".PokemonActivity" />
+        <activity android:name=".DetalleEntrenador" />
         <activity android:name=".DetallePokemon" />
         <activity android:name=".CrearEntrenador" />
         <activity android:name=".CrearPokemon" />

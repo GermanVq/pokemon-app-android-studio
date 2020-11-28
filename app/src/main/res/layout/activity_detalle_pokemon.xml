@@ -50,7 +50,7 @@
             android:id="@+id/lblTituloDetalle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Detalle Pokemon"
+            android:text="@string/detalle_pokemon"
             android:textAlignment="center"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -80,7 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="ID"
+                    android:text="@string/id_pokemon"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -102,7 +102,7 @@
                     android:id="@+id/lblTituloNombre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nombre"
+                    android:text="@string/nombre"
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textSize="18sp"
@@ -126,7 +126,7 @@
                     android:id="@+id/lblTituloEntrenador"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Entrenador"
+                    android:text="@string/entrenador"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -149,7 +149,7 @@
                     android:id="@+id/lblTituloElemento"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Elemento"
+                    android:text="@string/elemento"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -172,7 +172,7 @@
                     android:id="@+id/lblTituloNivel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nivel"
+                    android:text="@string/nivel"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />

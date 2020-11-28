@@ -24,10 +24,10 @@ public class DetallePokemon extends AppCompatActivity {
 
         foto = findViewById(R.id.imgFotoDetalle);
         nombre = findViewById(R.id.lblNombreDetalle);
-        entrenador = findViewById(R.id.lblSexoDetalle);
+        entrenador = findViewById(R.id.lblEntrenadorDetalle);
         id = findViewById(R.id.lblIdDetalle);
-        elemento = findViewById(R.id.lblEdadDetalle);
-        nivel = findViewById(R.id.lblCiudadDetalle);
+        elemento = findViewById(R.id.lblElementoDetalle);
+        nivel = findViewById(R.id.lblNivelDetalle);
 
         intent = getIntent();
         bundle = intent.getBundleExtra("datos");

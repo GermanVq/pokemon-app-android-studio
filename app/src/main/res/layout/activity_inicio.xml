@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".InicioActivity">
     <include layout="@layout/toolbar">
 
@@ -40,7 +41,7 @@
             android:src="@android:drawable/ic_menu_add"
             android:onClick="AgregarPokemon"
             fab:fab_size="mini"
-            fab:fab_label="Agregar Pokemon" />
+            fab:fab_label="@string/agregar_pokemon" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_item2"
@@ -49,14 +50,27 @@
             android:src="@android:drawable/ic_menu_add"
             android:onClick="AgregarEntrenador"
             fab:fab_size="mini"
-            fab:fab_label="Agregar Entrenador" />
+            fab:fab_label="@string/agregar_entrenador" />
 
     </com.github.clans.fab.FloatingActionMenu>
 
-    <include
-        layout="@layout/content_pokemon"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="55dp"/>
+        android:paddingTop="100dp">
+
+
+
+        <Button
+            android:layout_width="402dp"
+            android:layout_height="300dp"
+            android:padding="50dp"
+            android:text="@string/entrenadores_pokemones"
+            android:onClick="verEntrenadores"
+            android:textColor="@color/colorWhithePokemos"
+            android:backgroundTint="@color/colorBlackePokemos"
+            android:textStyle="bold"></Button>
+    </LinearLayout>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

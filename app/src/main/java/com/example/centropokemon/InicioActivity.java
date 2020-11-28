@@ -17,13 +17,18 @@ public class InicioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
 
-
-
-
     }
 
     public void AgregarPokemon(View v){
         intent = new Intent(InicioActivity.this, CrearPokemon.class);
+        startActivity(intent);
+    }
+    public void verPokemones(View v){
+        intent = new Intent(InicioActivity.this, PokemonActivity.class);
+        startActivity(intent);
+    }
+    public void verEntrenadores(View v){
+        intent = new Intent(InicioActivity.this, PokemonActivity.class);
         startActivity(intent);
     }
     public void AgregarEntrenador(View v){

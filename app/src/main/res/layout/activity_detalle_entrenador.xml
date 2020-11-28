@@ -50,7 +50,7 @@
             android:id="@+id/lblTituloDetalle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Detalle Entrenador"
+            android:text="@string/detalle_entrenador"
             android:textAlignment="center"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -80,7 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="ID"
+                    android:text="@string/id_entrenador"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -102,7 +102,7 @@
                     android:id="@+id/lblTituloNombre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nombre"
+                    android:text="@string/nombre"
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textSize="18sp"
@@ -126,7 +126,7 @@
                     android:id="@+id/lblTituloEdad"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Edad"
+                    android:text="@string/edad"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -149,7 +149,7 @@
                     android:id="@+id/lblTituloCiudad"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ciudad"
+                    android:text="@string/ciudad"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -172,7 +172,7 @@
                     android:id="@+id/lblTituloSexo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sexo"
+                    android:text="@string/sexo"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
